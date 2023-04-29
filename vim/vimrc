@@ -1,0 +1,17 @@
+
+set number
+set noswapfile
+
+set noerrorbells
+set novisualbell
+
+" search
+set smartcase
+set ignorecase
+set incsearch
+set showmatch
+
+" highlighting
+syntax on
+set relativenumber
+set hlsearch

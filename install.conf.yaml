@@ -1,0 +1,19 @@
+- clean: ['~']
+
+- shell:
+  - [apt-get install zsh]
+  - [mkdir -p zsh/.antigen, Create antigen folder]
+  - [curl -L git.io/antigen > zsh/.antigen/antigen.zsh, Download antigen]
+  
+- link:
+    ~/.dotfiles: ''
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux: tmux/
+    ~/.gitconfig: git/gitconfig
+    ~/.vimrc: vim/vimrc
+    ~/.antigen: zsh/.antigen
+    ~/.zshrc: zsh/.zshrc
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [zsh]

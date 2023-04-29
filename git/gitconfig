@@ -1,0 +1,5 @@
+[user]
+	email = semyon.sylka@gmail.com
+	name = Semyon Sylka
+[alias]
+	lg = log --pretty=format:\"%h - %an(%ae) : %s\"
